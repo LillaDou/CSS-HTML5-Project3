@@ -1,124 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Online Registration Form</title>
-</head>
-<body>
-    <div class="page">
-    <h1 class="title-header">THE CODE REVIEW</h1>
-    
-    <div class="page-without-title">
-
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+            content="width=device-width, initial scale=1.0, maximum-scale=1.0"/>
+        <title>Signup - Newsletter</title>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css"/>
+        <style>
+            body {
+                font-family: "Merriweather";
+            }
+        </style>
+    </head>
+    <body>
         <header>
-            <p class="text-header-1">
-                Signup for our newsletter
-            </p>
-            <p class="text-header-2">
-                Get the latest news on how your code is doing right in your inbox
-            </p>
-
-            <hr class="horizontal-header-1">
-            <hr class="horizontal-header-2">
+            <h1>THE CODE REVIEW</h1>
         </header>
+
+        <section class="newsletter-invitation">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+
         <main>
-            <h2 class="title-main">Contact Information</h2>
-            <form action="" method="GET" class="name-form">
-                <div class="form-row">
-                    <label for="full-name">Full Name</label>
-                    <input id="full-name" name="full-name" type="text" placeholder="Required">
-                </div>
-            </form>
-            <form action="" method="GET" class="email-form">
-                <div class="form-row">
-                    <label for="email-address">Email Address</label>
-                    <input id="email-address" name="email-address" type="email" placeholder="Required">
-                </div>
-            </form>
-            <form action="" method="GET" class="phone-form">
-                <div class="form-row">
-                    <label for="phone-number">Phone-Number</label>
-                    <input id="phone-number" name="phone-number" type="text">
-                </div>
-            </form>
-            <form action="" method="GET" class="street-form">
-                <div class="form-row">
-                    <label for="street-address">Street Address</label>
-                    <input id="street-address" name="street-address" type="text">
-                </div>
-            </form>
-            <form action="" method="GET" class="city-form">
-                <div class="form-row">
-                    <label for="city">City</label>
-                    <input id="city" name="city" type="text">
-                </div>
-            </form>
-            <form action="" method="GET" class="state-form">
-                <div class="form-row">
-                    <label for="state">State</label>
-                    <select id="state" name="state">
-                            <option value="" disabled selected>Choose State</option>
-                            <option value="Spain">Spain</option>
-                    </select>
-                </div>
-            </form>
-            <form action="" method="GET" class="zip-form">
-                <div class="form-row">
-                    <label for="zip-code">Zip Code</label>
-                    <input id="zip-code" name="zip-code" type="text">
-                </div>
-            </form>
-            <hr class="horizontal-main">
-            <h2 class="title-main">Newsletter</h2>
-            <form action="" method="GET" class="checkbox-form">
-                <div class="form-row-newsletter">
-                    <legend for="checkbox">Select the newsletter you would like to recieve</legend>
-                    <div class="newsletter-1">
-                        <input id="checkbox-html" name="checkbox" type="checkbox">
-                            <label for="checkbox-html">HTML News CSS News</label>
+            <form action="" method="get" class="Newsletter-form">
+                <fieldset class="contact-information">
+                    <legend>Contact Information</legend>
+
+                    <div class="form-element">
+                        <label for="full-name">Full Name</label>
+                        <input id="full-name" name="full-name" type="text" placeholder="Required"/>
                     </div>
-                    <div class="newsletter-1">
-                        <input id="checkbox-css" name="checkbox" type="checkbox">
-                            <label for="checkbox-css">CSS News</label>
+
+                    <div class="form-element">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="Required"/>
                     </div>
-                    <div class="newsletter-1">
-                        <input id="checkbox-javascript" name="checkbox" type="checkbox">
-                            <label for="checkbox-javascript">Javascript News</label>
-                    </div>       
-                </div>
+
+                    <div class="form-element">
+                        <label for="phone-number">Phone Number</label>
+                        <input id="phone-number" name="phone-number" type="tel"/>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="street-address">Street Address</label>
+                        <input id="street-address" name="street-address" type="text"/>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="city">City</label>
+                        <input id="city" name="city" type="text"/>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">Choose a State</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="newsletter">
+                    <legend>Newsletter</legend>
+                </fieldset>
             </form>
-            <form action="" method="GET" class="radio-button-form">
-                <div class="form-row-newsletter">
-                        <legend for="button">Newsletter format</legend>
-                        <div class="newsletter-1">
-                            <input id="button-html" name="button" type="radio" value="HTML" checked>
-                            <label for="button-html" class="radio-label">HTML</label>
-                        </div>
-                        <div class="newsletter-1">
-                            <input id="button-plain-text" name="button" type="radio" value="Plain Text" checked>
-                            <label for="button-plain-text" class="radio-label">Plain Text</label>
-                        </div>
-                </div>
-            </form> 
-            <form action="" method="GET" class="text-area-form">
-                <div class="form-row-textarea">  
-                    <legend for="topics">Other topics you'd like to hear about</legend>
-                    <textarea id="topics" name="topics"></textarea>                    
-                </div>
-            </form>  
-            <form action="" method="GET" class="button-form">
-                <div class="form-row">
-                    <button>Sign Up</button>
-                </div>
-            </form>           
         </main>
+
         <footer>
-            <p class="footer-text">Copyright The Code Review</p>
+            <p><em>Copyright The Code Review</em></p>
         </footer>
-    </div>
-    </div>
-</body>
+    </body>
 </html>
