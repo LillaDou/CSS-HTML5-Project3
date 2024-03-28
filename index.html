@@ -27,8 +27,8 @@
         <hr size="4" width="90%" color="#2D3945"/>
 
         <main>
-            <form action="" method="get" class="Newsletter-form">
-                <fieldset class="contact-information">
+            <form action="" method="get" class="newsletter-form">
+                <fieldset class="contact-information fieldset">
                     <legend>Contact Information</legend>
 
                     <div class="form-element">
@@ -59,7 +59,7 @@
                     <div class="form-element">
                         <label for="state">State</label>
                         <select id="state" name="state">
-                            <option value="">Choose State</option>
+                            <option value="" disabled selected>Choose State</option>
                             <option value="California">California</option>
                             <option value="Texas">Texas</option>
                             <option value="Florida">Florida</option>
@@ -68,13 +68,15 @@
                         </select>
                     </div>
 
-                    <div class="form-element">
+                    <div class="form-element zip">
                         <label for="zip-code">Zip Code</label>
                         <input id="zip-code" name="zip-code" type="text"/>
                     </div>
                 </fieldset>
 
-                <fieldset class="newsletter">
+                <hr size="4" width="100%" color="#2D3945"/>
+
+                <fieldset class="newsletter fieldset">
                     <legend>Newsletter</legend>
 
                     <div class="newsletter-element">
@@ -94,7 +96,7 @@
                     </div>
 
                     <div class="newsletter-element">
-                        <fieldset class="newsletter-format-section">
+                        <fieldset class="newsletter-format-section fieldset">
                             <legend>Newsletter format</legend>
                             <input id="newsletter-format-1" name="newsletter-format" type="radio" value="html" checked/>
                             <label for="newsletter-format-1">HTML</label>

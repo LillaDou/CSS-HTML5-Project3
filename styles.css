@@ -35,7 +35,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 33px;
+    margin-bottom: 36px;
 }
 
 h2 {
@@ -59,3 +59,102 @@ p {
 hr {
     margin-bottom: 3px;
 }
+
+hr:last-of-type {
+    margin-bottom: 26px;
+}
+
+.newsletter-form {
+    /* border: 0.5px red solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 14px;
+    margin-right: 14px;
+    
+}
+.fieldset {
+    border: none;
+}
+
+.contact-information {
+    border: 1px aqua solid;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 7px;
+}
+
+.contact-information legend {
+    color: #2D3945;
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 24px;
+}
+
+.form-element {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-element input[type="text"],
+.form-element input[type="email"],
+.form-element input[type="tel"] {
+    color: #495D70;
+    font-size: 14px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    text-align: left;
+    background-color: #EFF0F1;
+    border: none;
+    border-radius: 3px; /* Curvatura de las esquinas del input */
+    padding: 17px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #BEC2C5;
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+
+.form-element label {
+    color: #495D70;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+select {
+    color: #BEC2C5;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #EFF0F1;
+    border: none;
+    border-radius: 3px; 
+    padding: 17px;
+    width: 100%;
+}
+
+.zip input[type="text"] {
+    width: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
