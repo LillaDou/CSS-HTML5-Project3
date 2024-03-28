@@ -73,7 +73,43 @@
 
                 <fieldset class="newsletter">
                     <legend>Newsletter</legend>
+
+                    <div class="newsletter-element">
+                        <span>Select the newsletters you would like to receive</span>
+                        <div class="newsletter-element-type">
+                            <input id="html" name="newsletter-type" type="checkbox" value="html" checked/>
+                            <label for="html">HTML News</label>
+                        </div>
+                        <div class="newsletter-element-type">
+                            <input id="css" name="newsletter-type" type="checkbox" value="css"/>
+                            <label for="css">CSS News</label>
+                        </div>
+                        <div class="newsletter-element-type">
+                            <input id="javascript" name="newsletter-type" type="checkbox" value="javascript"/>
+                            <label for="javascript">Javascript News</label>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-element">
+                        <fieldset class="newsletter-format-section">
+                            <legend>Newsletter format</legend>
+                            <input id="newsletter-format-1" name="newsletter-format" type="radio" value="html" checked/>
+                            <label for="newsletter-format-1">HTML</label>
+
+                            <input id="newsletter-format-2" name="newsletter-format" type="radio" value="plain-text"/>
+                            <label for="newsletter-format-2">Plain text</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="newsletter-element">
+                        <label for="other-topics">Other topics you'd like to hear about</label>
+                        <textarea id="other-topics" name="other-topics"></textarea>
+                    </div>
                 </fieldset>
+
+                <div class="newsletter-element">
+                    <button>Sign Up</button>
+                </div>
             </form>
         </main>
 
