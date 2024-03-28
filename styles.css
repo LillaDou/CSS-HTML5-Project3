@@ -35,7 +35,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 33px;
 }
 
 h2 {
@@ -54,4 +54,8 @@ p {
 
     margin-right: 22px;
     margin-left: 22px;
+}
+
+hr {
+    margin-bottom: 3px;
 }
