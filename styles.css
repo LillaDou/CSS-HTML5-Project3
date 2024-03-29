@@ -246,6 +246,20 @@ footer {
     margin-bottom: 200px;
 }
 
+button:hover {
+    color: #4EBBB5;
+    background-color: #FFFFFF;
+    border: 1px #4EBBB5 solid;
+    transition-duration: 0.3s;
+}
+
+button:active {
+    color: #FFFFFF;
+    background-color: #388a86;
+    border: none;
+    transition-duration: 0.3s;
+}
+
 /* Desktop */
 @media only screen and (min-width: 960px) {
     .desktop-width {
