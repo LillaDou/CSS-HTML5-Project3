@@ -56,11 +56,17 @@ p {
     margin-left: 22px;
 }
 
-hr {
+.separation-line {
+    display: flex;
+    margin-right: 14px;
+    margin-left: 14px;
     margin-bottom: 3px;
 }
 
-hr:last-of-type {
+.separation-line-2 {
+    display: flex;
+    margin-right: 14px;
+    margin-left: 14px;
     margin-bottom: 26px;
 }
 
@@ -79,7 +85,6 @@ hr:last-of-type {
 }
 
 .contact-information {
-    /* border: 1px aqua solid; */
     display: flex;
     flex-direction: column;
 
@@ -242,8 +247,65 @@ footer {
 }
 
 /* Desktop */
-@media only screen and (min-width: 960) {
+@media only screen and (min-width: 960px) {
+    .desktop-width {
+        width: 594px;
+    }
+    header {
+        margin-bottom: 65px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .newsletter-invitation {
+        margin-bottom: 42px;
+    }
+    .separation-line,
+    .separation-line-2 {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .separation-line-2 {
+        margin-bottom: 44px;
+    }
+    .newsletter-form {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .contact-information {
+        margin-bottom: 47px;
+    }
+    .form-element {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
 
+        margin-bottom: 8px;
+    }
+    .form-element input[type="text"],
+    .form-element input[type="email"],
+    .form-element input[type="tel"],
+    select {
+        width: 440px;
+        padding: 15px;
+    }
+    .form-element label {
+        width: 152px;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+    }
+    .zip input[type="text"] {
+        width: 154px;
+    }
+
+    
 }
 
 

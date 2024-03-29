@@ -18,112 +18,114 @@
             <h1>THE CODE REVIEW</h1>
         </header>
 
-        <section class="newsletter-invitation">
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </section>
+        <div class="desktop-width">
+            <section class="newsletter-invitation">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </section>
 
-        <hr size="6" width="90%" color="#2D3945"/>
-        <hr size="4" width="90%" color="#2D3945"/>
+            <hr class="separation-line" size="6" color="#2D3945"/>
+            <hr class="separation-line-2" size="4" color="2D3945"/>
 
-        <main>
-            <form action="" method="get" class="newsletter-form">
-                <fieldset class="contact-information fieldset">
-                    <legend>Contact Information</legend>
+            <main>
+                <form action="" method="get" class="newsletter-form">
+                    <fieldset class="contact-information fieldset">
+                        <legend>Contact Information</legend>
 
-                    <div class="form-element">
-                        <label for="full-name">Full Name</label>
-                        <input id="full-name" name="full-name" type="text" placeholder="Required"/>
-                    </div>
+                        <div class="form-element">
+                            <label for="full-name">Full Name</label>
+                            <input id="full-name" name="full-name" type="text" placeholder="Required"/>
+                        </div>
 
-                    <div class="form-element">
-                        <label for="email">Email Address</label>
-                        <input id="email" name="email" type="email" placeholder="Required"/>
-                    </div>
+                        <div class="form-element">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" type="email" placeholder="Required"/>
+                        </div>
 
-                    <div class="form-element">
-                        <label for="phone-number">Phone Number</label>
-                        <input id="phone-number" name="phone-number" type="tel"/>
-                    </div>
+                        <div class="form-element">
+                            <label for="phone-number">Phone Number</label>
+                            <input id="phone-number" name="phone-number" type="tel"/>
+                        </div>
 
-                    <div class="form-element">
-                        <label for="street-address">Street Address</label>
-                        <input id="street-address" name="street-address" type="text"/>
-                    </div>
+                        <div class="form-element">
+                            <label for="street-address">Street Address</label>
+                            <input id="street-address" name="street-address" type="text"/>
+                        </div>
 
-                    <div class="form-element">
-                        <label for="city">City</label>
-                        <input id="city" name="city" type="text"/>
-                    </div>
+                        <div class="form-element">
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text"/>
+                        </div>
 
-                    <div class="form-element">
-                        <label for="state">State</label>
-                        <select id="state" name="state">
-                            <option value="" disabled selected>Choose State</option>
-                            <option value="California">California</option>
-                            <option value="Texas">Texas</option>
-                            <option value="Florida">Florida</option>
-                            <option value="Hawaii">Hawaii</option>
-                            <option value="Alaska">Alaska</option>
-                        </select>
-                    </div>
+                        <div class="form-element">
+                            <label for="state">State</label>
+                            <select id="state" name="state">
+                                <option value="" disabled selected>Choose State</option>
+                                <option value="California">California</option>
+                                <option value="Texas">Texas</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Alaska">Alaska</option>
+                            </select>
+                        </div>
 
-                    <div class="form-element zip">
-                        <label for="zip-code">Zip Code</label>
-                        <input id="zip-code" name="zip-code" type="text"/>
-                    </div>
-                </fieldset>
+                        <div class="form-element zip">
+                            <label for="zip-code">Zip Code</label>
+                            <input id="zip-code" name="zip-code" type="text"/>
+                        </div>
+                    </fieldset>
 
-                <hr size="4" width="100%" color="#2D3945"/>
+                    <hr class="separation-line-2" size="4" width="100%" color="#2D3945"/>
 
-                <fieldset class="newsletter fieldset">
-                    <legend class="legend-title-newsletter">Newsletter</legend>
+                    <fieldset class="newsletter fieldset">
+                        <legend class="legend-title-newsletter">Newsletter</legend>
+
+                        <div class="newsletter-element">
+                            <span>Select the newsletters you would like to receive</span>
+                            <div class="newsletter-element-type">
+                                <input id="html" name="newsletter-type" type="checkbox" value="html" checked/>
+                                <label for="html">HTML News</label>
+                            </div>
+                            <div class="newsletter-element-type">
+                                <input id="css" name="newsletter-type" type="checkbox" value="css"/>
+                                <label for="css">CSS News</label>
+                            </div>
+                            <div class="newsletter-element-type">
+                                <input id="javascript" name="newsletter-type" type="checkbox" value="javascript"/>
+                                <label for="javascript">Javascript News</label>
+                            </div>
+                        </div>
+
+                        <div class="newsletter-element">
+                            <fieldset class="newsletter-format-section fieldset">
+                                <legend>Newsletter format</legend>
+                                <div class="radio-button-1">
+                                    <input id="newsletter-format-1" name="newsletter-format" type="radio" value="html" checked/>
+                                    <label for="newsletter-format-1">HTML</label>
+                                </div>
+
+                                <div class="radio-button-2">
+                                    <input id="newsletter-format-2" name="newsletter-format" type="radio" value="plain-text"/>
+                                    <label for="newsletter-format-2">Plain text</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="newsletter-element textarea-topics">
+                            <label for="other-topics">Other topics you'd like to hear about</label>
+                            <textarea id="other-topics" name="other-topics"></textarea>
+                        </div>
+                    </fieldset>
 
                     <div class="newsletter-element">
-                        <span>Select the newsletters you would like to receive</span>
-                        <div class="newsletter-element-type">
-                            <input id="html" name="newsletter-type" type="checkbox" value="html" checked/>
-                            <label for="html">HTML News</label>
-                        </div>
-                        <div class="newsletter-element-type">
-                            <input id="css" name="newsletter-type" type="checkbox" value="css"/>
-                            <label for="css">CSS News</label>
-                        </div>
-                        <div class="newsletter-element-type">
-                            <input id="javascript" name="newsletter-type" type="checkbox" value="javascript"/>
-                            <label for="javascript">Javascript News</label>
-                        </div>
+                        <button>Sign Up</button>
                     </div>
+                </form>
+            </main>
 
-                    <div class="newsletter-element">
-                        <fieldset class="newsletter-format-section fieldset">
-                            <legend>Newsletter format</legend>
-                            <div class="radio-button-1">
-                                <input id="newsletter-format-1" name="newsletter-format" type="radio" value="html" checked/>
-                                <label for="newsletter-format-1">HTML</label>
-                            </div>
-
-                            <div class="radio-button-2">
-                                <input id="newsletter-format-2" name="newsletter-format" type="radio" value="plain-text"/>
-                                <label for="newsletter-format-2">Plain text</label>
-                            </div>
-                        </fieldset>
-                    </div>
-
-                    <div class="newsletter-element textarea-topics">
-                        <label for="other-topics">Other topics you'd like to hear about</label>
-                        <textarea id="other-topics" name="other-topics"></textarea>
-                    </div>
-                </fieldset>
-
-                <div class="newsletter-element">
-                    <button>Sign Up</button>
-                </div>
-            </form>
-        </main>
-
-        <footer>
-            <p><em>Copyright The Code Review</em></p>
-        </footer>
+            <footer>
+                <p><em>Copyright The Code Review</em></p>
+            </footer>
+        </div>
     </body>
 </html>
