@@ -65,13 +65,13 @@ hr:last-of-type {
 }
 
 .newsletter-form {
-    /* border: 0.5px red solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin-left: 14px;
     margin-right: 14px;
+    margin-bottom: 5px;
     
 }
 .fieldset {
@@ -79,12 +79,11 @@ hr:last-of-type {
 }
 
 .contact-information {
-    border: 1px aqua solid;
+    /* border: 1px aqua solid; */
     display: flex;
     flex-direction: column;
 
     width: 100%;
-
     margin-bottom: 7px;
 }
 
@@ -147,6 +146,107 @@ select {
 .zip input[type="text"] {
     width: 160px;
 }
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.legend-title-newsletter {
+    color: #2D3945;
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 24px;
+}
+
+.newsletter-element {
+    color: #495D70;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    text-align: left;
+
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.newsletter-element-type {
+    margin-bottom: 13px;
+}
+.newsletter-element-type:first-of-type {
+    margin-top: 13px;
+}
+
+.newsletter-element-type:last-of-type {
+    margin-bottom: 0px;
+}
+
+.newsletter-format-section > legend {
+    margin-bottom: 12px;
+}
+
+.newsletter-format-section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.radio-button-1 {
+    margin-bottom: 13px;
+}
+
+.radio-button-2 {
+    margin-bottom: 5px;
+}
+
+textarea {
+    color: #495D70;
+    font-size: 14px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    text-align: left;
+
+    background-color: #EFF0F1;
+    border: none;
+    border-radius: 3px; /* Curvatura de las esquinas del input */
+    padding: 32px;
+
+    width: 100%;
+    margin-top: 12px;
+}
+
+.newsletter-element button {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #4EBBB5;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 18px 0;
+
+    width: 100%;
+}
+
+footer {
+    margin-bottom: 200px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 960) {
+
+}
+
+
 
 
 

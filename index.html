@@ -77,7 +77,7 @@
                 <hr size="4" width="100%" color="#2D3945"/>
 
                 <fieldset class="newsletter fieldset">
-                    <legend>Newsletter</legend>
+                    <legend class="legend-title-newsletter">Newsletter</legend>
 
                     <div class="newsletter-element">
                         <span>Select the newsletters you would like to receive</span>
@@ -98,15 +98,19 @@
                     <div class="newsletter-element">
                         <fieldset class="newsletter-format-section fieldset">
                             <legend>Newsletter format</legend>
-                            <input id="newsletter-format-1" name="newsletter-format" type="radio" value="html" checked/>
-                            <label for="newsletter-format-1">HTML</label>
+                            <div class="radio-button-1">
+                                <input id="newsletter-format-1" name="newsletter-format" type="radio" value="html" checked/>
+                                <label for="newsletter-format-1">HTML</label>
+                            </div>
 
-                            <input id="newsletter-format-2" name="newsletter-format" type="radio" value="plain-text"/>
-                            <label for="newsletter-format-2">Plain text</label>
+                            <div class="radio-button-2">
+                                <input id="newsletter-format-2" name="newsletter-format" type="radio" value="plain-text"/>
+                                <label for="newsletter-format-2">Plain text</label>
+                            </div>
                         </fieldset>
                     </div>
 
-                    <div class="newsletter-element">
+                    <div class="newsletter-element textarea-topics">
                         <label for="other-topics">Other topics you'd like to hear about</label>
                         <textarea id="other-topics" name="other-topics"></textarea>
                     </div>
