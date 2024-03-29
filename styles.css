@@ -152,6 +152,15 @@ select {
     width: 160px;
 }
 
+.form-element input:focus,
+.form-element select:focus {
+    outline: none;
+    border: 1px solid #2D3945;
+    background-color: #FFFFFF;
+    transition-duration: 0.4s;
+}
+
+
 .newsletter {
     display: flex;
     flex-direction: column;
@@ -224,6 +233,12 @@ textarea {
     margin-top: 12px;
 }
 
+textarea:focus {
+    outline: none;
+    border: 1px solid #2D3945;
+    transition-duration: 0.4s;
+}
+
 .newsletter-element button {
     display: flex;
     justify-content: center;
@@ -258,6 +273,10 @@ button:active {
     background-color: #388a86;
     border: none;
     transition-duration: 0.3s;
+}
+
+.form-element input:focus:invalid {
+    border: 1px solid red !important;
 }
 
 /* Desktop */
